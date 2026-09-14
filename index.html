@@ -109,7 +109,7 @@
     const db = firebase.database();
 
     const initialUnits = [];
-    for (let floor = 1; floor <= 6; floor++) {
+    for (let floor = 1; floor <= 7; floor++) {
         for (let apt = 1; apt <= 3; apt++) {
             const aptNum = (floor * 100) + apt;
             initialUnits.push({ id: `apt_${aptNum}`, name: `شقة ${aptNum}`, type: `الدور ${floor}`, tenant: `ساكن ${aptNum}`, phone: '', paidAmount: 0, isPaid: false });
